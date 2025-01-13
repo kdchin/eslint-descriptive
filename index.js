@@ -15,7 +15,10 @@ function safeRequire(obj) {
 }
 
 const plugin = {
-    configs: { "all": require("./configs/all.js") },
+    configs: { 
+		"all": require("./configs/all.js"),
+		"recommended": require("./configs/recommended.js")
+	},
     rules: {
         "no-console": "./rules/eslint-no-console.js",
 		"no-empty-function": "./rules/ts-eslint-no-empty-function.js",

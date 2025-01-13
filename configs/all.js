@@ -101,7 +101,8 @@ module.exports = Object.freeze({
 			{
 				"ignoreClassFieldInitialValues": true,
 				"ignoreDefaultValues": true,
-				"ignore": [-1, 0, 1]
+				"ignore": [-2, -1, 0, 1, 2, 10, 100],
+                "ignoreArrayIndexes": true,
 			}
 		],
         "descriptive/no-misleading-character-class": "error",
@@ -128,7 +129,7 @@ module.exports = Object.freeze({
         "descriptive/no-unused-vars": [
             "error",
             {
-                "args": "all",
+                "args": "none",
                 "argsIgnorePattern": "^_",
                 "caughtErrors": "all",
                 "caughtErrorsIgnorePattern": "^_",
